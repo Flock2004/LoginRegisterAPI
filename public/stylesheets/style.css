@@ -1,0 +1,53 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: rgb(57, 142, 212);
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+form {
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+}
+
+.container h1 {
+  width: 38%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: rgb(57, 142, 212);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: rgb(57, 142, 212);
+  border: 1px solid rgb(57, 142, 212);
+}
+
+a {
+  color: #00B7FF;
+}

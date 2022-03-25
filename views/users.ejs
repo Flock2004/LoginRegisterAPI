@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Liste des utilisateurs</title>
+    <style>
+        body {
+            background: rgb(57, 142, 212);
+        }
+
+        .container {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .container h1 {
+            width: 38%;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center" style="padding: 50px">Liste des utilisateurs</h1>
+    <div class="container">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(var i = 0; i < users.length; i++) { %>
+                <tr class="table-primary">
+                    <th scope="row"><%= i+1 %></th>
+                    <th scope="row"><%= users[i].email %></th>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
